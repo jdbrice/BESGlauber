@@ -17,7 +17,7 @@ Double_t fnOuter( Double_t * x, Double_t * p ){
 
 
 
-void mcGlauberFit(  string fCentral = "../data/Run14_AuAu_14p5/period_B_nbdFit_center.root", string fOuter = "../data/Run14_AuAu_14p5/period_B_nbdFit_left.root" ){
+void mcGlauberFit(  string fCentral = "../data/Run14_AuAu_14p5/period_C_nbdFit_center.root", string fOuter = "../data/Run14_AuAu_14p5/period_C_nbdFit_left.root" ){
 
 	using namespace jdb;
 	// Open the file containing the 
