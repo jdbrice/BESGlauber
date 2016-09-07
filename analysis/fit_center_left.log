@@ -1,0 +1,29 @@
+PRE Loaded roobarb
+Loaded roobarb
+
+Processing mcGlauberFit.C...
+Debug    : [XmlConfig.XmlConfig] Empty XmlConfig
+Debug    : [XmlConfig.setDefaults] Setting Defaults
+Debug    : [Reporter.Reporter] (glauberComparison.pdf, width=200, height=200)
+Info     : [Reporter.Reporter]  Opening report glauberComparison.pdf
+Debug    : [Reporter.Reporter]  Instance #1
+Debug    : [Reporter.saveImage]  Saving Image to overlap_central.pdf
+ FCN=35.9586 FROM MIGRAD    STATUS=CONVERGED     261 CALLS         262 TOTAL
+                     EDM=9.44255e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.70872e-01   3.14544e-02   1.17994e-05  -2.07694e-02
+   2  p1           7.07420e+00   5.15709e+00   1.39297e-04  -3.50856e-03
+   3  p2           1.28846e+00   9.37040e-01   2.40908e-05   2.44339e-02
+   4  p3          -6.38654e-01   4.66652e-01   6.57480e-05   8.01847e-03
+   5  p4           6.47417e-03   4.77270e-03   5.14055e-07   2.38090e-01
+Debug    : [Reporter.saveImage]  Saving Image to ratio_central.pdf
+Debug    : [Reporter.saveImage]  Saving Image to overlap_outer.pdf
+ FCN=86.3251 FROM MIGRAD    STATUS=CONVERGED      14 CALLS          15 TOTAL
+                     EDM=8.15643e-18    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -3.89502e-06   1.15095e-05   3.00000e-05   3.50920e-04
+Debug    : [Reporter.saveImage]  Saving Image to ratio_Outer.pdf
+Debug    : [Reporter.~Reporter] 
+Debug    : [Reporter.~Reporter] glauberComparison.pdf Closed 

@@ -764,12 +764,12 @@ void StCentrality::Init_AuAu14GeV()
 
   /************************************************************************************/
   // BBC_MB ONLY
-  const Double_t npp = 1.172 ;
-  mNpp = npp + GetNppError(npp) ;
-  mK   = 2.00 ;
-  mX   = 0.12 + xError ;
-  mEfficiency  = 0.14 ; // mult dependent
-  mTriggerBias = 1.00 ;
+  // const Double_t npp = 1.172 ;
+  // mNpp = npp + GetNppError(npp) ;
+  // mK   = 2.00 ;
+  // mX   = 0.12 + xError ;
+  // mEfficiency  = 0.14 ; // mult dependent
+  // mTriggerBias = 1.00 ;
   // BBC_MB ONLY
   /************************************************************************************/
   
@@ -824,43 +824,85 @@ void StCentrality::Init_AuAu14GeV()
   // BBC_MB ONLY
   /************************************************************************************/
 
-/************************************************************************************/
+  /************************************************************************************/
+    // VPD_MB || BBC_MB
+  // mMultiplicityCut[0].push_back( 235 ); mCentralityMin[0].push_back( 0.0 ); mCentralityMax[0].push_back( 5.0 );
+  // mMultiplicityCut[0].push_back( 194 ); mCentralityMin[0].push_back( 5.0 ); mCentralityMax[0].push_back( 10.0 );
+  // mMultiplicityCut[0].push_back( 159 ); mCentralityMin[0].push_back( 10.0 ); mCentralityMax[0].push_back( 15.0 );
+  // mMultiplicityCut[0].push_back( 131 ); mCentralityMin[0].push_back( 15.0 ); mCentralityMax[0].push_back( 20.0 );
+  // mMultiplicityCut[0].push_back( 107 ); mCentralityMin[0].push_back( 20.0 ); mCentralityMax[0].push_back( 25.0 );
+  // mMultiplicityCut[0].push_back(  87 ); mCentralityMin[0].push_back( 25.0 ); mCentralityMax[0].push_back( 30.0 );
+  // mMultiplicityCut[0].push_back(  70 ); mCentralityMin[0].push_back( 30.0 ); mCentralityMax[0].push_back( 35.0 );
+  // mMultiplicityCut[0].push_back(  55 ); mCentralityMin[0].push_back( 35.0 ); mCentralityMax[0].push_back( 40.0 );
+  // mMultiplicityCut[0].push_back(  43 ); mCentralityMin[0].push_back( 40.0 ); mCentralityMax[0].push_back( 45.0 );
+  // mMultiplicityCut[0].push_back(  34 ); mCentralityMin[0].push_back( 45.0 ); mCentralityMax[0].push_back( 50.0 );
+  // mMultiplicityCut[0].push_back(  25 ); mCentralityMin[0].push_back( 50.0 ); mCentralityMax[0].push_back( 55.0 );
+  // mMultiplicityCut[0].push_back(  19 ); mCentralityMin[0].push_back( 55.0 ); mCentralityMax[0].push_back( 60.0 );
+  // mMultiplicityCut[0].push_back(  14 ); mCentralityMin[0].push_back( 60.0 ); mCentralityMax[0].push_back( 65.0 );
+  // mMultiplicityCut[0].push_back(  10 ); mCentralityMin[0].push_back( 65.0 ); mCentralityMax[0].push_back( 70.0 );
+  // mMultiplicityCut[0].push_back(   7 ); mCentralityMin[0].push_back( 70.0 ); mCentralityMax[0].push_back( 75.0 );
+  // mMultiplicityCut[0].push_back(   5 ); mCentralityMin[0].push_back( 75.0 ); mCentralityMax[0].push_back( 80.0 );
+  // mMultiplicityCut[1].push_back( 237 );  mMultiplicityCut[2].push_back( 233 );
+  // mMultiplicityCut[1].push_back( 197 );  mMultiplicityCut[2].push_back( 190 );
+  // mMultiplicityCut[1].push_back( 164 );  mMultiplicityCut[2].push_back( 155 );
+  // mMultiplicityCut[1].push_back( 136 );  mMultiplicityCut[2].push_back( 126 );
+  // mMultiplicityCut[1].push_back( 113 );  mMultiplicityCut[2].push_back( 102 );
+  // mMultiplicityCut[1].push_back(  93 );  mMultiplicityCut[2].push_back(  81 );
+  // mMultiplicityCut[1].push_back(  75 );  mMultiplicityCut[2].push_back(  64 );
+  // mMultiplicityCut[1].push_back(  61 );  mMultiplicityCut[2].push_back(  50 );
+  // mMultiplicityCut[1].push_back(  48 );  mMultiplicityCut[2].push_back(  39 );
+  // mMultiplicityCut[1].push_back(  38 );  mMultiplicityCut[2].push_back(  29 );
+  // mMultiplicityCut[1].push_back(  30 );  mMultiplicityCut[2].push_back(  22 );
+  // mMultiplicityCut[1].push_back(  23 );  mMultiplicityCut[2].push_back(  16 );
+  // mMultiplicityCut[1].push_back(  17 );  mMultiplicityCut[2].push_back(  11 );
+  // mMultiplicityCut[1].push_back(  12 );  mMultiplicityCut[2].push_back(   8 );
+  // mMultiplicityCut[1].push_back(   9 );  mMultiplicityCut[2].push_back(   5 );
+  // mMultiplicityCut[1].push_back(   6 );  mMultiplicityCut[2].push_back(   3 );
   // VPD_MB || BBC_MB
-mMultiplicityCut[0].push_back( 235 ); mCentralityMin[0].push_back( 0.0 ); mCentralityMax[0].push_back( 5.0 );
-mMultiplicityCut[0].push_back( 194 ); mCentralityMin[0].push_back( 5.0 ); mCentralityMax[0].push_back( 10.0 );
-mMultiplicityCut[0].push_back( 159 ); mCentralityMin[0].push_back( 10.0 ); mCentralityMax[0].push_back( 15.0 );
-mMultiplicityCut[0].push_back( 131 ); mCentralityMin[0].push_back( 15.0 ); mCentralityMax[0].push_back( 20.0 );
-mMultiplicityCut[0].push_back( 107 ); mCentralityMin[0].push_back( 20.0 ); mCentralityMax[0].push_back( 25.0 );
-mMultiplicityCut[0].push_back(  87 ); mCentralityMin[0].push_back( 25.0 ); mCentralityMax[0].push_back( 30.0 );
-mMultiplicityCut[0].push_back(  70 ); mCentralityMin[0].push_back( 30.0 ); mCentralityMax[0].push_back( 35.0 );
-mMultiplicityCut[0].push_back(  55 ); mCentralityMin[0].push_back( 35.0 ); mCentralityMax[0].push_back( 40.0 );
-mMultiplicityCut[0].push_back(  43 ); mCentralityMin[0].push_back( 40.0 ); mCentralityMax[0].push_back( 45.0 );
-mMultiplicityCut[0].push_back(  34 ); mCentralityMin[0].push_back( 45.0 ); mCentralityMax[0].push_back( 50.0 );
-mMultiplicityCut[0].push_back(  25 ); mCentralityMin[0].push_back( 50.0 ); mCentralityMax[0].push_back( 55.0 );
-mMultiplicityCut[0].push_back(  19 ); mCentralityMin[0].push_back( 55.0 ); mCentralityMax[0].push_back( 60.0 );
-mMultiplicityCut[0].push_back(  14 ); mCentralityMin[0].push_back( 60.0 ); mCentralityMax[0].push_back( 65.0 );
-mMultiplicityCut[0].push_back(  10 ); mCentralityMin[0].push_back( 65.0 ); mCentralityMax[0].push_back( 70.0 );
-mMultiplicityCut[0].push_back(   7 ); mCentralityMin[0].push_back( 70.0 ); mCentralityMax[0].push_back( 75.0 );
-mMultiplicityCut[0].push_back(   5 ); mCentralityMin[0].push_back( 75.0 ); mCentralityMax[0].push_back( 80.0 );
-mMultiplicityCut[1].push_back( 237 );  mMultiplicityCut[2].push_back( 233 );
-mMultiplicityCut[1].push_back( 197 );  mMultiplicityCut[2].push_back( 190 );
-mMultiplicityCut[1].push_back( 164 );  mMultiplicityCut[2].push_back( 155 );
-mMultiplicityCut[1].push_back( 136 );  mMultiplicityCut[2].push_back( 126 );
-mMultiplicityCut[1].push_back( 113 );  mMultiplicityCut[2].push_back( 102 );
-mMultiplicityCut[1].push_back(  93 );  mMultiplicityCut[2].push_back(  81 );
-mMultiplicityCut[1].push_back(  75 );  mMultiplicityCut[2].push_back(  64 );
-mMultiplicityCut[1].push_back(  61 );  mMultiplicityCut[2].push_back(  50 );
-mMultiplicityCut[1].push_back(  48 );  mMultiplicityCut[2].push_back(  39 );
-mMultiplicityCut[1].push_back(  38 );  mMultiplicityCut[2].push_back(  29 );
-mMultiplicityCut[1].push_back(  30 );  mMultiplicityCut[2].push_back(  22 );
-mMultiplicityCut[1].push_back(  23 );  mMultiplicityCut[2].push_back(  16 );
-mMultiplicityCut[1].push_back(  17 );  mMultiplicityCut[2].push_back(  11 );
-mMultiplicityCut[1].push_back(  12 );  mMultiplicityCut[2].push_back(   8 );
-mMultiplicityCut[1].push_back(   9 );  mMultiplicityCut[2].push_back(   5 );
-mMultiplicityCut[1].push_back(   6 );  mMultiplicityCut[2].push_back(   3 );
-// VPD_MB || BBC_MB
-/************************************************************************************/
+  /************************************************************************************/
 
+  /************************************************************************************/
+  // Period B (VPD_MB || BBC_MB) ( runs 15053001 -> 15057020 )
+  // Period C ( BBC_MB || VPD_MB || ZDC_MB ) ( runs 15057021 -> 15070021 )
+  const Double_t npp = 1.162 ;
+  mNpp = npp + GetNppError(npp) ;
+  mK   = 2.00 ;
+  mX   = 0.12 + xError ;
+  mEfficiency  = 0.14 ; // mult dependent
+  mTriggerBias = 1.00 ;
+  mMultiplicityCut[0].push_back( 238 ); mCentralityMin[0].push_back( 0.0 ); mCentralityMax[0].push_back( 5.0 );
+  mMultiplicityCut[0].push_back( 198 ); mCentralityMin[0].push_back( 5.0 ); mCentralityMax[0].push_back( 10.0 );
+  mMultiplicityCut[0].push_back( 165 ); mCentralityMin[0].push_back( 10.0 ); mCentralityMax[0].push_back( 15.0 );
+  mMultiplicityCut[0].push_back( 137 ); mCentralityMin[0].push_back( 15.0 ); mCentralityMax[0].push_back( 20.0 );
+  mMultiplicityCut[0].push_back( 112 ); mCentralityMin[0].push_back( 20.0 ); mCentralityMax[0].push_back( 25.0 );
+  mMultiplicityCut[0].push_back(  92 ); mCentralityMin[0].push_back( 25.0 ); mCentralityMax[0].push_back( 30.0 );
+  mMultiplicityCut[0].push_back(  74 ); mCentralityMin[0].push_back( 30.0 ); mCentralityMax[0].push_back( 35.0 );
+  mMultiplicityCut[0].push_back(  59 ); mCentralityMin[0].push_back( 35.0 ); mCentralityMax[0].push_back( 40.0 );
+  mMultiplicityCut[0].push_back(  46 ); mCentralityMin[0].push_back( 40.0 ); mCentralityMax[0].push_back( 45.0 );
+  mMultiplicityCut[0].push_back(  36 ); mCentralityMin[0].push_back( 45.0 ); mCentralityMax[0].push_back( 50.0 );
+  mMultiplicityCut[0].push_back(  27 ); mCentralityMin[0].push_back( 50.0 ); mCentralityMax[0].push_back( 55.0 );
+  mMultiplicityCut[0].push_back(  20 ); mCentralityMin[0].push_back( 55.0 ); mCentralityMax[0].push_back( 60.0 );
+  mMultiplicityCut[0].push_back(  15 ); mCentralityMin[0].push_back( 60.0 ); mCentralityMax[0].push_back( 65.0 );
+  mMultiplicityCut[0].push_back(  11 ); mCentralityMin[0].push_back( 65.0 ); mCentralityMax[0].push_back( 70.0 );
+  mMultiplicityCut[0].push_back(   7 ); mCentralityMin[0].push_back( 70.0 ); mCentralityMax[0].push_back( 75.0 );
+  mMultiplicityCut[0].push_back(   5 ); mCentralityMin[0].push_back( 75.0 ); mCentralityMax[0].push_back( 80.0 );
+  mMultiplicityCut[1].push_back( 240 );  mMultiplicityCut[2].push_back( 235 );
+  mMultiplicityCut[1].push_back( 202 );  mMultiplicityCut[2].push_back( 194 );
+  mMultiplicityCut[1].push_back( 169 );  mMultiplicityCut[2].push_back( 160 );
+  mMultiplicityCut[1].push_back( 142 );  mMultiplicityCut[2].push_back( 131 );
+  mMultiplicityCut[1].push_back( 118 );  mMultiplicityCut[2].push_back( 107 );
+  mMultiplicityCut[1].push_back(  97 );  mMultiplicityCut[2].push_back(  86 );
+  mMultiplicityCut[1].push_back(  80 );  mMultiplicityCut[2].push_back(  68 );
+  mMultiplicityCut[1].push_back(  65 );  mMultiplicityCut[2].push_back(  54 );
+  mMultiplicityCut[1].push_back(  52 );  mMultiplicityCut[2].push_back(  41 );
+  mMultiplicityCut[1].push_back(  41 );  mMultiplicityCut[2].push_back(  31 );
+  mMultiplicityCut[1].push_back(  32 );  mMultiplicityCut[2].push_back(  23 );
+  mMultiplicityCut[1].push_back(  24 );  mMultiplicityCut[2].push_back(  17 );
+  mMultiplicityCut[1].push_back(  18 );  mMultiplicityCut[2].push_back(  12 );
+  mMultiplicityCut[1].push_back(  13 );  mMultiplicityCut[2].push_back(   8 );
+  mMultiplicityCut[1].push_back(  10 );  mMultiplicityCut[2].push_back(   6 );
+  mMultiplicityCut[1].push_back(   7 );  mMultiplicityCut[2].push_back(   4 );
+  /************************************************************************************/
 
 
   // Set same centrality bins 

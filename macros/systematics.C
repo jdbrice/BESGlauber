@@ -16,11 +16,11 @@ void systematics( int nEvents = 1000000, string name="nominal", string type = "d
 		treeFile = "/star/institutions/rice/jdb/run14/auau15/glauber/nominal.root";
 	gtree->Open( treeFile.c_str() );
 
-	StNegativeBinomial * nbd 	= new StNegativeBinomial( 1.172, 2.0, 0.12, 0.14, 1.0, 0 );
+	StNegativeBinomial * nbd 	= new StNegativeBinomial( 1.162, 2.0, 0.12, 0.14, 1.0, 0 );
 	StCentrality * cen 			= new StCentrality( "auau_14gev", type.c_str() );
 
 	// open the output file
-	TFile * fOut 		= new TFile( ("systematics_BBC_or_VPD/sys_" + name + ".root").c_str(), "RECREATE" );
+	TFile * fOut 		= new TFile( ("sys_" + name + ".root").c_str(), "RECREATE" );
 
 	// Make histograms for storing the values of interest
 	TH1D * hMult 		= new TH1D( "mult", "mult", 500, 0, 500 );

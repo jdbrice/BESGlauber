@@ -1,5 +1,10 @@
 CVS
 .sl64_gcc482
+.sl64_gcc483
 temp_gccflags.c
 *.root
+*.pdf
+*.png
 data
+*.dat
+*.DS_Store

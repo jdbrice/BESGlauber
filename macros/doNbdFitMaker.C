@@ -8,18 +8,18 @@
 
 //____________________________________________________________________________________________________
 void doNbdFitMaker(
-    const Char_t* outputFileName = "",
-    const Int_t nevents = 1000,
-    const Char_t* realData = "refMult_periodB.root",
-    const Char_t* glauber  = "hNCollNPart.root",
-    const Char_t* realHistogram = "hRefMultTpc",
+    const Char_t* outputFileName = "period_B_nbdFit_center.root",
+    const Int_t nevents = 3000000,
+    const Char_t* realData = "data/Run14_AuAu_14p5/period_B_refMult1D.root",
+    const Char_t* glauber  = "data/Run14_AuAu_14p5/hNCollNPart_nominal.root",
+    const Char_t* realHistogram = "hRefMult_center",
     const Double_t multiplicityCut = 30,
-    const Double_t npp = 1.37,
-    const Double_t k = 1.0,
-    const Double_t x = 0.13,
-    const Double_t efficiency = 1.00,
+    const Double_t npp = 1.162,
+    const Double_t k = 2.0,
+    const Double_t x = 0.12,
+    const Double_t efficiency = 0.14,
     const Double_t triggerbias = 1.00,
-    const Bool_t isConstEfficiency = kTRUE
+    const Bool_t isConstEfficiency = 0
 ){
   gSystem->Load("St_base");
   gSystem->Load("StUtilities");
